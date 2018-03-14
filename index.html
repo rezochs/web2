@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="dist/styles/Vidage.css" />	<!-- css -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
+
+
+
+<!--必要-->
+  
+<!--[if IE]>
+	<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- Vidage sample structure -->
+	<div class="Vidage">
+		<div class="Vidage__image"></div>
+		<video id="VidageVideo" class="Vidage__video" preload="metadata" loop autoplay muted>
+			<!--<source src="videos/bg.webm" type="video/webm">-->
+			<source src="videos/bg.mp4" type="video/mp4">
+		</video>
+		<div class="Vidage__backdrop"></div>
+	</div>
+	<head>
+		<title>While Plus</title>
+	</head>
+	
+	<body>
+		<header class="top-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-xs-5 col-sm-4 header-logo">
+						<br>
+						<a href="index.html"> 
+							<h1 class="logo"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2945775594&site=qq&menu=yes">while</a></span></h1>
+						</a>
+					</div>
+
+					<div class="col-md-8 col-md-offset-1 col-xs-7">
+						<nav class="navbar navbar-default">
+						  	<div class="container-fluid nav-bar">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+							    <div class="navbar-header">
+							      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								        <span class="sr-only">Toggle navigation</span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+							      	</button>
+							    </div>
+
+						    	<!-- Collect the nav links, forms, and other content for toggling -->
+							    <div class="collapse navbar-collapse navbar-def" id="bs-example-navbar-collapse-1">
+							      
+							      	<ul class="nav navbar-nav navbar-right">
+							        				<div class="slogan">
+													<a target="_blank" href="https://space.bilibili.com/35335853/">  
+													bilbil直播间
+													</a>	
+													</div>
+										<li> </li>
+										<li> </li>
+										<li> </li>
+										<li> </li>
+							      	</ul>
+							    </div><!-- /navbar-collapse -->
+						  	</div><!-- / .container-fluid -->
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="wrapper">
+			
+			<div id="header" class=>
+				<!-- <section class="top clearfix">
+					<div class="pull-left">
+						<h1><a class="logo" href="index.html">Nevada <span class="logo-head">Plus</span></a></h1>
+					</div>
+					<! <div class="pull-right">
+						<a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
+					</div> 
+				</section>-->
+				<section class="center">
+				</section>
+			</div>
+			<div class="content-block" id="portfolio"> </div><!-- #portfolio -->
+
+
+			
+			<div class="content-block footer-bottom" id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6">&nbsp;&nbsp;&copy;while 2018
+						<div/>
+						<div>
+							<audio controls="controls" autoplay="autoplay">
+  								<source src="/i/song.ogg" type="audio/ogg" />
+  								<source src="videos/bg.mp3" type="audio/mpeg" />
+							</audio>
+						</div>
+						
+					
+					</div>
+				</div>
+			</div><!-- #footer -->
+
+		</div><!--/#wrapper-->
+
+
+
+
+		<script src="assets/js/jquery-2.1.3.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/jquery.actual.min.js"></script>
+		<script src="assets/js/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/contact.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/smoothscroll.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+		  	$(window).scroll(function() {
+		  		
+		  		console.log("asdf");
+
+				if ($(window).scrollTop() > 100 ){
+		    
+		 		$('.top-header').addClass('shows');
+		    
+		  		} else {
+		    
+		   	 	$('.top-header').removeClass('shows');
+		    
+		 		};   	
+			});
+
+		  });
+
+		jQuery('.scroll').on('click', function(e){		
+				e.preventDefault()
+		    
+		  jQuery('html, body').animate({
+		      scrollTop : jQuery(this.hash).offset().top
+		    }, 1500);
+		});
+
+
+		</script>
+
+
+	</body>
+</html>
+
+
+
+
+
+
+
+	
+	<script src="dist/scripts/Vidage.min.js"></script>
+	<script>
+		new Vidage('#VidageVideo');
+	</script>
+</body>
+</html>
